@@ -6,7 +6,7 @@
 /*   By: mcaro-ro <mcaro-ro@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 15:27:33 by mcaro-ro          #+#    #+#             */
-/*   Updated: 2025/09/30 15:41:05 by mcaro-ro         ###   ########.fr       */
+/*   Updated: 2025/09/30 22:13:29 by mcaro-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@ std::string	get_valid_input(const std::string& msg)
 
 	while (true)
 	{
-		std::cout << msg << " ";
+		std::cout << COLOR_GREEN << msg << " " << COLOR_RESET;
 		std::getline(std::cin, input);
-		if (!input.empty())
+		if (std::cin.fail() || !input.empty())
 			return (input);
-		std::cout << "Field cannot be empty. Please try again." << std::endl;
+		std::cout << COLOR_RED << "Field cannot be empty. Please try again." << COLOR_RESET << std::endl;
 	}
 }
 

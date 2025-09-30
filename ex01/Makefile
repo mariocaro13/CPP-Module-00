@@ -6,7 +6,7 @@
 #    By: mcaro-ro <mcaro-ro@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/30 13:46:09 by mcaro-ro          #+#    #+#              #
-#    Updated: 2025/09/30 15:43:21 by mcaro-ro         ###   ########.fr        #
+#    Updated: 2025/09/30 20:47:00 by mcaro-ro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ YELLOW  = \033[0;33m
 RESET   = \033[0m
 
 CXX = c++
-FLAGS	=	-Wall -Werror -Wextra  -std=c++98 #-g -fsanitize=address
+FLAGS	=	-Wall -Werror -Wextra  -std=c++98 -g #-fsanitize=address
 
 SRC_DIR = src
 INC_DIR = inc

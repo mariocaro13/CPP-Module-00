@@ -6,7 +6,7 @@
 /*   By: mcaro-ro <mcaro-ro@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 15:25:58 by mcaro-ro          #+#    #+#             */
-/*   Updated: 2025/09/30 15:34:32 by mcaro-ro         ###   ########.fr       */
+/*   Updated: 2025/09/30 21:59:06 by mcaro-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,15 @@
 # define UTILS_HPP
 
 # include <iostream>
+# include <limits>
+
+# define COLOR_RESET   "\033[0m"
+# define COLOR_RED     "\033[31m"
+# define COLOR_GREEN     "\033[32m"
+# define COLOR_YELLOW  "\033[33m"
+# define COLOR_BLUE    "\033[34m"
+
+bool	safe_getline(std::string& out);
 
 /**
  * @brief Truncates a string to 10 characters, adding a dot if it's too long.

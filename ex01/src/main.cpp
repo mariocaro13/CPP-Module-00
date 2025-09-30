@@ -6,7 +6,7 @@
 /*   By: mcaro-ro <mcaro-ro@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 13:49:54 by mcaro-ro          #+#    #+#             */
-/*   Updated: 2025/09/30 16:04:15 by mcaro-ro         ###   ########.fr       */
+/*   Updated: 2025/09/30 22:40:21 by mcaro-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,13 @@ int	main(void)
 	std::string	input;
 	PhoneBook	phonebook;
 	
-	while (run)
+	while (run && !std::cin.fail())
 	{
-		std::cout << MSG_ENTER_CMD;
+		std::cout << COLOR_YELLOW << MSG_ENTER_CMD << COLOR_RESET;
 		std::getline(std::cin, input);
-
+		if (std::cin.fail())
+			run = false;
+			
 		CommandType cmd = parse_command(input);
 		switch (cmd)
 		{
@@ -47,8 +49,10 @@ int	main(void)
 				run = false;
 				break;
 			default:
-				std::cout << MSG_INVALID_CMD << std::endl;
+				std::cout << COLOR_RED << MSG_INVALID_CMD << COLOR_RESET << std::endl;
+				break;
 		}
+		std::cout << std::endl;
 	}
 	return (EXIT_SUCCESS);
 }

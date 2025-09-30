@@ -1,36 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.hpp                                           :+:      :+:    :+:   */
+/*   config.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mcaro-ro <mcaro-ro@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/30 15:53:34 by mcaro-ro          #+#    #+#             */
-/*   Updated: 2025/09/30 19:15:33 by mcaro-ro         ###   ########.fr       */
+/*   Created: 2025/09/30 19:12:03 by mcaro-ro          #+#    #+#             */
+/*   Updated: 2025/09/30 19:13:09 by mcaro-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MAIN_HPP
-# define MAIN_HPP
+#ifndef CONFIG_HPP
+# define CONFIG_HPP
 
-# include <iostream>
-# include <cstdlib>
-
-# include "utils.hpp"
-# include "Contact.hpp"
-# include "PhoneBook.hpp"
-
-# define MSG_ENTER_CMD  "Enter command (ADD, SEARCH, EXIT): "
-# define MSG_INVALID_CMD  "Invalid command. Please enter ADD, SEARCH or EXIT."
-
-enum CommandType
-{
-	CMD_INVALID,
-	CMD_ADD,
-	CMD_SEARCH,
-	CMD_EXIT
-};
-
-CommandType parse_command(const std::string& input);
+# define MAX_CONTACTS 8
 
 #endif
