@@ -6,7 +6,7 @@
 /*   By: mcaro-ro <mcaro-ro@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 14:21:49 by mcaro-ro          #+#    #+#             */
-/*   Updated: 2025/09/30 22:09:07 by mcaro-ro         ###   ########.fr       */
+/*   Updated: 2025/09/30 23:55:01 by mcaro-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ void	PhoneBook::display_all_contacts(void) const
 		return;
 	}
 	for (int i = 0; i < total; i++)
-		contacts->display_summary(i);
+		contacts[i].display_summary(i);
 }
 
 void	PhoneBook::search_contact(void)

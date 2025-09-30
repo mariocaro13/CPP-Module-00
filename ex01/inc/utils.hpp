@@ -6,7 +6,7 @@
 /*   By: mcaro-ro <mcaro-ro@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 15:25:58 by mcaro-ro          #+#    #+#             */
-/*   Updated: 2025/09/30 21:59:06 by mcaro-ro         ###   ########.fr       */
+/*   Updated: 2025/09/30 23:33:31 by mcaro-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,5 +45,7 @@ std::string truncate(const std::string& str);
  * @return std::string The validated user input.
  */
 std::string get_valid_input(const std::string& msg);
+
+std::string	get_valid_number(const std::string& msg);
 
 #endif

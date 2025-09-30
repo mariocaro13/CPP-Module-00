@@ -6,7 +6,7 @@
 /*   By: mcaro-ro <mcaro-ro@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 14:18:27 by mcaro-ro          #+#    #+#             */
-/*   Updated: 2025/09/30 20:36:20 by mcaro-ro         ###   ########.fr       */
+/*   Updated: 2025/09/30 23:43:37 by mcaro-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	Contact::set_contact(void)
 	this->first_name = get_valid_input("First Name:");
 	this->last_name = get_valid_input("Last Name:");
 	this->nickname = get_valid_input("Nickname:");
-	this->phone_number = get_valid_input("Phone Number:");
+	this->phone_number = get_valid_number("Phone Number:");
 	this->darkest_secret = get_valid_input("Darkest Secret:");
 }
 
